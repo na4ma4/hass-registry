@@ -1,2 +1,3 @@
-# hass-registry
-Home Assistant Registry
+# Home Assistant Registry
+
+
