@@ -37,11 +37,10 @@
   ],
   "options": {
     "broker": {
-      "address": "core-mosquitto",
-      "port": 1883,
+      "address": "tcp://core-mosquitto:1883",
       "user": "",
       "password": "",
-      "buftopic": "msh/ANZ/2/e/#"
+      "topic": "msh/ANZ/2/e/#"
     },
     "channels": [
       {
@@ -56,12 +55,11 @@
   },
   "schema": {
     "broker": {
-      "address": "str",
-      "port": "int",
+      "address": "str?",
       "user": "str?",
       "password": "str?",
-      "buftopic": "str",
-      "jsontopic": "str"
+      "clientid": "str?",
+      "topic": "str"
     },
     "channels": [
       {
@@ -70,5 +68,5 @@
       }
     ]
   },
-  "image": "ghcr.io/na4ma4/mqtt-protobuf-to-json"
+  "image": "ghcr.io/na4ma4/meshtastic-mqtt-bin-to-json"
 }
