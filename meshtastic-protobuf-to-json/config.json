@@ -38,7 +38,7 @@
   "options": {
     "broker": {
       "address": "tcp://core-mosquitto:1883",
-      "user": "",
+      "username": "",
       "password": "",
       "topic": "msh/ANZ/2/e/#"
     },
@@ -55,8 +55,8 @@
   },
   "schema": {
     "broker": {
-      "address": "str?",
-      "user": "str?",
+      "address": "str",
+      "username": "str?",
       "password": "str?",
       "clientid": "str?",
       "topic": "str"
