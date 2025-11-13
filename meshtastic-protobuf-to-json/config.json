@@ -40,6 +40,7 @@
       "address": "tcp://core-mosquitto:1883",
       "username": "",
       "password": "",
+      "clientid": "meshtastic-pb-to-json",
       "topic": "msh/ANZ/2/e/#"
     },
     "channels": [
