@@ -1,6 +1,6 @@
 {
   "name": "Meshtastic Protobuf to JSON",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "slug": "meshtastic-protobuf_to_json",
   "description": "Convert Meshtastic protobuf messages to JSON and publish them back to MQTT",
   "url": "https://github.com/na4ma4/meshtastic-mqtt-bin-to-json/tree/master",
