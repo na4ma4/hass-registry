@@ -3,3 +3,12 @@ build_from:
   aarch64: ghcr.io/hassio-addons/debian-base/aarch64:8.1.4
   amd64: ghcr.io/hassio-addons/debian-base/amd64:8.1.4
   armv7: ghcr.io/hassio-addons/debian-base/armv7:8.1.4
+labels:
+  org.opencontainers.image.title: "Home Assistant Add-on: Meshtastic MQTT Relay"
+  org.opencontainers.image.description: "Convert Meshtastic protobuf messages to JSON and publish them back to MQTT."
+  org.opencontainers.image.source: "https://github.com/na4ma4/hass-registry/tree/main/meshtastic-mqtt-translate"
+  org.opencontainers.image.licenses: "MIT"
+args:
+  TEMPIO_VERSION: "2024.11.2"
+  BUILD_NAME: "Meshtastic MQTT Relay"
+  BUILD_DESCRIPTION: "Convert Meshtastic protobuf messages to JSON and publish them back to MQTT."
