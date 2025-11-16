@@ -46,9 +46,6 @@
       "clientid": "meshtastic-pb-translator",
       "topic": "msh/ANZ/2/e/#"
     },
-    "store": {
-      "dsn": ""
-    },
     "channels": [
       {
         "name": "LongFast",
