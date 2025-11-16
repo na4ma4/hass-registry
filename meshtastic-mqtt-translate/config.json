@@ -16,7 +16,7 @@
   ],
   "boot": "auto",
   "init": false,
-  "ingress": true,
+  "ingress": false,
   "ingress_port": 8099,
   "timeout": 30,
   "panel_icon": "mdi:bigtop_updates",
