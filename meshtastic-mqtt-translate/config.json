@@ -75,5 +75,5 @@
       }
     ]
   },
-  "image": "ghcr.io/na4ma4/meshtastic-mqtt-translate"
+  "image": "ghcr.io/na4ma4/meshtastic-mqtt-translate-{arch}"
 }
