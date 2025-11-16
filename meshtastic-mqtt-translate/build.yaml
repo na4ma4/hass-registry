@@ -10,5 +10,6 @@ labels:
   org.opencontainers.image.licenses: "MIT"
 args:
   TEMPIO_VERSION: "2024.11.2"
+  MQTT_RELAY_VERSION: "0.2.2"
   BUILD_NAME: "Meshtastic MQTT Relay"
   BUILD_DESCRIPTION: "Convert Meshtastic protobuf messages to JSON and publish them back to MQTT."
