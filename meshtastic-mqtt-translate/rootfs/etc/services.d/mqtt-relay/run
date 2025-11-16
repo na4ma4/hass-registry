@@ -17,7 +17,25 @@ MQTT_BROKER=$(bashio::services mqtt "host")
 MQTT_USERNAME=$(bashio::services mqtt "username")
 MQTT_PASSWORD=$(bashio::services mqtt "password")
 
-export MQTT_BROKER MQTT_USERNAME MQTT_PASSWORD
+if [[ ${MQTT_BROKER} != "null" && ! -z ${MQTT_BROKER} ]]; then
+	## if MQTT_BROKER does not have "tcp://" prefix, add it
+	if [[ ${MQTT_BROKER} != tcp://* ]]; then
+		MQTT_BROKER="tcp://${MQTT_BROKER}"
+	fi
+	## if MQTT_BROKER does not have port, add default port 1883
+	if ! [[ ${MQTT_BROKER} =~ :[0-9]+$ ]]; then
+		MQTT_BROKER="${MQTT_BROKER}:1883"
+	fi
+	export MQTT_BROKER
+fi
+
+if [[ ${MQTT_USERNAME} == "null" || -z ${MQTT_USERNAME} ]]; then
+	export MQTT_USERNAME=""
+fi
+
+if [[ ${MQTT_PASSWORD} == "null" || -z ${MQTT_PASSWORD} ]]; then
+	export MQTT_PASSWORD=""
+fi
 
 echo "Starting Meshtastic MQTT Relay with the following settings:"
 echo "MQTT Host: ${MQTT_BROKER}"
