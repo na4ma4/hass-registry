@@ -22,6 +22,7 @@ echo "Starting Meshtastic MQTT Relay with the following settings:"
 echo "MQTT Host: ${MQTT_BROKER}"
 echo "MQTT User: ${MQTT_USERNAME}"
 # Note: Not printing MQTT_PASSWORD for security reasons
+echo "MQTT Password: ********"
 
 ## Run your program
 exec /opt/mqtt-relay/meshtastic-mqtt-relay
