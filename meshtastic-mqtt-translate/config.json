@@ -8,7 +8,9 @@
   "services": [
     "mqtt:need"
   ],
+  "apparmor": "true",
   "hassio_api": true,
+  "homeassistant": "2025.7.0",
   "arch": [
     "aarch64",
     "amd64",
@@ -17,8 +19,11 @@
   "boot": "auto",
   "init": false,
   "ingress": true,
+  "ingress_port": 8099,
   "timeout": 30,
   "panel_icon": "mdi:bigtop_updates",
+  "backup": "hot",
+  "watchdog": "http://[HOST]:[PORT:8099]/",
   "map": [
     {
       "type": "share",
@@ -43,6 +48,9 @@
       "clientid": "meshtastic-pb-translator",
       "topic": "msh/ANZ/2/e/#"
     },
+    "store": {
+      "dsn": ""
+    },
     "channels": [
       {
         "name": "LongFast",
@@ -58,9 +66,12 @@
     "broker": {
       "address": "str",
       "username": "str?",
-      "password": "str?",
+      "password": "password?",
       "clientid": "str?",
       "topic": "str"
+    },
+    "store": {
+      "dsn": "url?"
     },
     "channels": [
       {
