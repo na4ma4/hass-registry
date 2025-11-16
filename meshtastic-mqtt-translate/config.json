@@ -8,7 +8,6 @@
   "services": [
     "mqtt:need"
   ],
-  "apparmor": "true",
   "hassio_api": true,
   "homeassistant": "2025.7.0",
   "arch": [
