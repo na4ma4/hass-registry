@@ -1,6 +1,6 @@
 {
   "name": "Meshtastic: Protobuf to JSON",
-  "version": "0.2.4",
+  "version": "0.3.0",
   "slug": "meshtastic-mqtt-translate",
   "description": "Convert Meshtastic protobuf messages to JSON and publish them back to MQTT",
   "url": "https://github.com/na4ma4/meshtastic-mqtt-translate/tree/master",
@@ -68,6 +68,10 @@
     },
     "store": {
       "dsn": "url?"
+    },
+    "features": {
+      "fanout_relay": "bool?",
+      "store_messages": "bool?"
     },
     "channels": [
       {
