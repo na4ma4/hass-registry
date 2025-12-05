@@ -1,6 +1,6 @@
 {
   "name": "Meshtastic: Protobuf to JSON",
-  "version": "0.3.2",
+  "version": "0.3.2-1",
   "slug": "meshtastic-mqtt-translate",
   "description": "Convert Meshtastic protobuf messages to JSON and publish them back to MQTT",
   "url": "https://github.com/na4ma4/meshtastic-mqtt-translate/tree/master",
@@ -47,10 +47,6 @@
       "clientid": "meshtastic-pb-translator",
       "topic": "msh/ANZ/2/e/#"
     },
-    "features": {
-      "fanout-relay": false,
-      "message-store": false
-    },
     "channels": [
       {
         "name": "LongFast",
@@ -74,7 +70,7 @@
       "dsn": "url?"
     },
     "features": {
-      "fanout-client": "bool?",
+      "fanout-relay": "bool?",
       "message-store": "bool?"
     },
     "channels": [
